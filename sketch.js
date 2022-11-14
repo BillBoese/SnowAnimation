@@ -3,7 +3,7 @@
 var fps = 30;
 
 // the canvas capturer instance
-//var capturer = new CCapture({ format: 'png', framerate: fps });
+var capturer = new CCapture({ format: 'png', framerate: fps });
 
 let snowflakes = []; // array to hold snowflake objects
 
@@ -34,7 +34,7 @@ function draw() {
     flake.update(t); // update snowflake position
     flake.display(); // draw snowflake
   }
-//  capturer.capture(document.getElementById('defaultCanvas0'));
+  capturer.capture(document.getElementById('defaultCanvas0'));
 }
 
 // snowflake class
@@ -75,7 +75,7 @@ function snowflake() {
     ellipse(this.posX, this.posY, this.size);
   };
 }
-/*
+
 function mouseClicked (){
   capturer.start();
 }
@@ -84,4 +84,4 @@ function keyPressed(){
   capturer.stop();
   capturer.save();
 }  
-*/
+
