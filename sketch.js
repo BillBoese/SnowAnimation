@@ -3,7 +3,9 @@
 var fps = 30;
 
 // the canvas capturer instance
-var capturer = new CCapture({ format: 'png', framerate: fps });
+var capturer = new CCapture( {  format: 'webm',  fps,  name: 'snow_webm',  quality: 100,} );
+
+
 
 let snowflakes = []; // array to hold snowflake objects
 
@@ -15,7 +17,7 @@ function setup() {
   createCanvas(762, 1118);
   fill(240);
   noStroke();
-  frameRate(30);
+  frameRate(30);  // WARNING THIS HAS to be commented out for the capture to work
 }
 
 function draw() {
