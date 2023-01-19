@@ -5,8 +5,6 @@ var fps = 30;
 // the canvas capturer instance
 var capturer = new CCapture( {  format: 'webm',  fps,  name: 'snow_webm',  quality: 100,} );
 
-
-
 let snowflakes = []; // array to hold snowflake objects
 
 function preload(){
