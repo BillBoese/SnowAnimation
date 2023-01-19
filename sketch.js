@@ -3,7 +3,7 @@
 var fps = 30;
 
 // the canvas capturer instance
-var capturer = new CCapture( {  format: 'webm',  fps,  name: 'snow_webm',  quality: 100,} );
+//var capturer = new CCapture( {  format: 'webm',  fps,  name: 'snow_webm',  quality: 100,} );
 
 let snowflakes = []; // array to hold snowflake objects
 
@@ -34,7 +34,7 @@ function draw() {
     flake.update(t); // update snowflake position
     flake.display(); // draw snowflake
   }
-  capturer.capture(document.getElementById('defaultCanvas0'));
+ // capturer.capture(document.getElementById('defaultCanvas0'));
 }
 
 // snowflake class
